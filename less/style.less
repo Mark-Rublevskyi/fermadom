@@ -1,0 +1,146 @@
+// out: ../css/style.css
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+  
+h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 30px 0;
+
+    .top-header {
+        .header-content {
+            .left-bar {
+                display: inline-block;
+                width: 35%;
+
+                .heading {
+                    width: 70%;
+
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 100;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .right-bar {
+                display: inline-block;
+                float: right;
+
+                .top-bar {
+                    padding-bottom: 40px;
+
+                    .contact-email {
+                        display: inline-block;
+
+                        span {
+                            color: #219653;
+                            padding-left: 10px;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    ul {
+                        display: inline-block;
+                        padding-left: 60px;
+
+                        li {
+                            display: inline-block;
+                            padding-left: 20px;
+
+                            a {
+                                color: #828282;
+                                font-weight: bold;
+
+                                &:hover {
+                                    color: #27AE60;
+
+                                    span {
+                                        color: #27AE60; 
+                                    }
+                                }
+
+                                span {
+                                    font-weight: bold;
+                                    color: #828282;
+                                    padding-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .down-bar {
+                    .search {
+                        width: 80%;
+                        display: inline-block;
+
+                        input {
+                            &:first-child {
+                                padding: 10px 0;
+                                width: 90%;
+                                border: 2px solid #6FCF97;
+                                outline: none;
+                            }
+
+                            &:nth-child(2) {
+                                padding: 10px 20px;
+                                margin-left: -84px;
+                                cursor: pointer;
+                                background-color:  #F2C94C;
+                                border: none;
+                                outline: none;
+                                transition: .3s all ease;
+
+                                &:hover {
+                                    background-color: #27AE60;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                    .rug {
+                        float: right;
+                        display: inline-block;
+                        position: relative;
+
+                        p {
+                            position: absolute;
+                            top: -15px;
+                            right: 0;
+                            background-color: #F2C94C;
+                            border-radius: 100%;
+                            padding: 1px 5px;
+                        }
+                        
+                        span {
+                            font-size: 35px;
+                            color: #27AE60;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
