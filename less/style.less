@@ -3,7 +3,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
   
 h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a {
@@ -22,19 +22,18 @@ h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a {
 }
 
 header {
-    padding: 30px 0;
-
     .top-header {
+        padding: 30px 0;
+        
         .header-content {
             .left-bar {
                 display: inline-block;
-                width: 35%;
+                width: 25%;
+                box-sizing: border-box;
 
                 .heading {
-                    width: 70%;
-
                     h1 {
-                        font-size: 20px;
+                        font-size: 22px;
                         font-weight: 100;
                         text-transform: uppercase;
                     }
@@ -44,6 +43,7 @@ header {
             .right-bar {
                 display: inline-block;
                 float: right;
+                box-sizing: border-box;
 
                 .top-bar {
                     padding-bottom: 40px;
@@ -138,6 +138,99 @@ header {
                             color: #27AE60;
                             cursor: pointer;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .down-header {
+        background-image: url(../img/header-image.svg);
+        padding: 20px 0;
+
+        .header-content {
+            display: flex;
+            justify-content: space-around;
+
+            .header-block {
+                text-align: center;
+                padding-right: 20px;
+                border-right: 1px #333333 solid;
+
+                &:last-child {
+                   border: none; 
+                }
+
+                .header-text {
+                    p {
+                        font-weight: bolder;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-us {
+    padding: 20px 0;
+
+    .about-us-content {
+        .left-bar {
+            display: inline-block;
+            width: 35%;
+
+
+            .about-us-heading {
+                width: 70%;
+                padding-bottom: 20px;
+
+                h2 {
+                    font-weight: 700;
+                    font-size: 34px;
+                    line-height: 44px;
+                }
+            }
+
+            .about-us-text {
+                p {
+                    padding-bottom: 20px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #4F4F4F;
+                }
+            }
+        }
+
+        .right-bar {
+            display: inline-block;
+            width: 60%;
+
+            .slider {
+                .slide {
+                    position: relative;
+
+                    .text {
+                        width: 47%;
+                        background: rgba(242, 201, 76, 0.8);
+                        padding: 10px 30px;
+                        position: absolute;
+                        top: 35%;
+                        left: 5%;
+
+                        p {
+                            width: 90%;
+                            font-weight: bold;
+                            font-size: 28px;
+                            line-height: 36px;
+                            color: #333333;
+                            padding-left: 10px;
+                        }
+                    }
+
+                    img {
+
                     }
                 }
             }
