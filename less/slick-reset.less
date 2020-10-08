@@ -1,0 +1,51 @@
+// out: ../css/slick-reset.css
+
+.slick-arrow {
+    background: rgba(78, 77, 77, .5);
+    padding: 30px 7px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 40px;
+    font-weight: normal;
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+}
+
+.slick-prev {
+    top: 33%;
+}
+
+.slick-next {
+    top: 33%;
+    right: 0;
+}
+
+.slick-dots {
+    position: absolute;
+    z-index: 100;
+    bottom: 3%;
+    left: 40%;
+
+    li {
+        display: inline-block;
+
+        button {
+            color: transparent;
+            background: transparent;
+            border: 1px #fff solid;
+            border-radius: 100%;
+            padding: 0 13%;
+            outline: none;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .slick-active {
+        button {
+            background-color: rgb(255, 255, 255);
+        }
+    }
+}
