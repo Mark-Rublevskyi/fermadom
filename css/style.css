@@ -175,6 +175,8 @@ header .top-header .header-content .right-bar .down-bar .rug span {
 }
 header .down-header {
   background-image: url(../img/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px 0;
 }
 header .down-header .header-content {
