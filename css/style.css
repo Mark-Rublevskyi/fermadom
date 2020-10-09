@@ -477,6 +477,8 @@ header .down-header .header-content .header-block .header-text p {
 }
 .footer {
   background-image: url(../img/vegetable-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 100px 0;
   overflow: auto;
 }
