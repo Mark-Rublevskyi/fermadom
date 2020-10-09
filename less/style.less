@@ -431,7 +431,7 @@ header {
 
                         .to-basket {
                             border: 1px solid #6FCF97;
-                            padding: 10px 10px 10px 10px;
+                            padding: 10px;
                             border-radius: 5px;
                             cursor: pointer;
 
@@ -456,87 +456,87 @@ header {
 }
 
 .subscribe {
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
     padding: 50px 0;
     overflow: auto;
 
-    .wrapper {
-        .subscribe-content {
-            padding: 50px 100px;
-            background-image: url(../img/bg.svg);
-            overflow: auto;
+    .subscribe-content {
+        padding: 50px 100px;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
-            .left-bar {
-                display: inline-block;
+        .right-bar {
+            float: right;
+            padding-top: 20px;
+            text-align: center;
+
+            .title {
+                padding-bottom: 10px;
+
+                h2 {
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 36px;
+                    color: #333333;
+                }
             }
 
-            .right-bar {
-                display: inline-block;
-                float: right;
-                padding-top: 20px;
+            .text {
+                padding-bottom: 20px;
 
-                .title {
-                    padding-bottom: 10px;
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #333333;
+                }
+            }
 
-                    h2 {
-                        font-weight: bold;
-                        font-size: 28px;
-                        line-height: 36px;
-                        color: #333333;
-                    }
+            .email {
+                span {
+                    position: absolute;
+                    z-index: 100;
+                    font-size: 15px;
+                    padding: 7px;
                 }
 
-                .text {
-                    padding-bottom: 20px;
+                input {
+                    padding: 8px 0;
+                    width: 60%;
+                    outline: none;
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 15px;
+                    border: 2px #828282 solid;
 
-                    p {
+                    &::placeholder {
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 22px;
-                        color: #333333;
+                        color: #828282;                            
                     }
                 }
 
-                .email {
-                    span {
-                        position: absolute;
-                        z-index: 100;
-                        font-size: 15px;
-                        padding: 7px;
-                    }
+                button {
+                    padding: 8px 20px;
+                    background: #F2C94C;
+                    border-radius: 2px;
+                    margin-left: -5px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    z-index: 200;
+                    position: relative;
+                    border: 2px #828282 solid;
 
-                    input {
-                        padding: 8px 0;
-                        width: 60%;
-                        outline: none;
-                        position: relative;
-                        padding-left: 30px;
-                        margin-bottom: 15px;
-                        border: 2px #828282 solid;
-
-                        &::placeholder {
-                            font-weight: 500;
-                            font-size: 16px;
-                            line-height: 22px;
-                            color: #828282;                            
-                        }
-                    }
-
-                    button {
-                        padding: 8px 20px;
-                        background: #F2C94C;
-                        border-radius: 2px;
-                        margin-left: -5px;
-                        border: none;
-                        outline: none;
-                        cursor: pointer;
-                        z-index: 200;
-                        position: relative;
-                        border: 2px #828282 solid;
-
-                        &:hover {
-                            background-color: #27AE60;
-                            color: #fff;
-                        }
+                    &:hover {
+                        background-color: #27AE60;
+                        color: #fff;
                     }
                 }
             }

@@ -350,7 +350,7 @@ header .down-header .header-content .header-block .header-text p {
 }
 .products .new-content .down-bar .block .block-footer .left-bar .to-basket {
   border: 1px solid #6FCF97;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -365,47 +365,49 @@ header .down-header .header-content .header-block .header-text p {
   font-size: 20px;
 }
 .subscribe {
+  background-image: url(../img/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 50px 0;
   overflow: auto;
 }
-.subscribe .wrapper .subscribe-content {
+.subscribe .subscribe-content {
   padding: 50px 100px;
-  background-image: url(../img/bg.svg);
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.subscribe .wrapper .subscribe-content .left-bar {
-  display: inline-block;
-}
-.subscribe .wrapper .subscribe-content .right-bar {
-  display: inline-block;
+.subscribe .subscribe-content .right-bar {
   float: right;
   padding-top: 20px;
+  text-align: center;
 }
-.subscribe .wrapper .subscribe-content .right-bar .title {
+.subscribe .subscribe-content .right-bar .title {
   padding-bottom: 10px;
 }
-.subscribe .wrapper .subscribe-content .right-bar .title h2 {
+.subscribe .subscribe-content .right-bar .title h2 {
   font-weight: bold;
   font-size: 28px;
   line-height: 36px;
   color: #333333;
 }
-.subscribe .wrapper .subscribe-content .right-bar .text {
+.subscribe .subscribe-content .right-bar .text {
   padding-bottom: 20px;
 }
-.subscribe .wrapper .subscribe-content .right-bar .text p {
+.subscribe .subscribe-content .right-bar .text p {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   color: #333333;
 }
-.subscribe .wrapper .subscribe-content .right-bar .email span {
+.subscribe .subscribe-content .right-bar .email span {
   position: absolute;
   z-index: 100;
   font-size: 15px;
   padding: 7px;
 }
-.subscribe .wrapper .subscribe-content .right-bar .email input {
+.subscribe .subscribe-content .right-bar .email input {
   padding: 8px 0;
   width: 60%;
   outline: none;
@@ -414,13 +416,13 @@ header .down-header .header-content .header-block .header-text p {
   margin-bottom: 15px;
   border: 2px #828282 solid;
 }
-.subscribe .wrapper .subscribe-content .right-bar .email input::placeholder {
+.subscribe .subscribe-content .right-bar .email input::placeholder {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   color: #828282;
 }
-.subscribe .wrapper .subscribe-content .right-bar .email button {
+.subscribe .subscribe-content .right-bar .email button {
   padding: 8px 20px;
   background: #F2C94C;
   border-radius: 2px;
@@ -432,7 +434,7 @@ header .down-header .header-content .header-block .header-text p {
   position: relative;
   border: 2px #828282 solid;
 }
-.subscribe .wrapper .subscribe-content .right-bar .email button:hover {
+.subscribe .subscribe-content .right-bar .email button:hover {
   background-color: #27AE60;
   color: #fff;
 }
