@@ -61,6 +61,10 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+header {
+  background-color: #fff;
+  overflow: auto;
+}
 header .top-header {
   padding: 30px 0;
 }
@@ -94,8 +98,10 @@ header .top-header .header-content .right-bar .top-bar-header .contact-email spa
   font-weight: bold;
 }
 header .top-header .header-content .right-bar .top-bar-header ul {
+  box-sizing: border-box;
   display: inline-block;
-  padding-left: 11%;
+  float: right;
+  padding-top: 4px;
 }
 header .top-header .header-content .right-bar .top-bar-header ul li {
   display: inline-block;
@@ -115,6 +121,16 @@ header .top-header .header-content .right-bar .top-bar-header ul li a span {
   font-weight: bold;
   color: #828282;
   padding-right: 5px;
+}
+header .top-header .header-content .right-bar .icons {
+  display: none;
+  padding-top: 25px;
+}
+header .top-header .header-content .right-bar .icons span {
+  color: #C4C4C4;
+  font-size: 60px;
+  padding-left: 40px;
+  text-align: center;
 }
 header .top-header .header-content .right-bar .down-bar .search {
   width: 80%;
@@ -186,8 +202,9 @@ header .down-header .header-content .header-block .header-text p {
 }
 .about-us .about-us-content .left-bar {
   display: inline-block;
-  width: 35%;
+  width: 40%;
   float: left;
+  padding-right: 2%;
 }
 .about-us .about-us-content .left-bar .about-us-heading {
   width: 70%;
@@ -207,7 +224,8 @@ header .down-header .header-content .header-block .header-text p {
 }
 .about-us .about-us-content .right-bar {
   display: inline-block;
-  width: 55%;
+  width: 58%;
+  float: right;
 }
 .about-us .about-us-content .right-bar .slider {
   position: relative;
@@ -222,7 +240,7 @@ header .down-header .header-content .header-block .header-text p {
   padding: 10px 30px;
   position: absolute;
   top: 35%;
-  left: 8%;
+  left: 15%;
 }
 .about-us .about-us-content .right-bar .slider .slide .text p {
   width: 90%;
@@ -237,10 +255,23 @@ header .down-header .header-content .header-block .header-text p {
   background-size: cover;
   padding: 60px 0 40px 0;
 }
+.categories .categories-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .categories .categories-content .block {
-  display: inline-block;
   padding-left: 20px;
   padding-bottom: 20px;
+  width: 23%;
+  border-radius: 5px;
+}
+.categories .categories-content .block .image {
+  background-image: url(../img/milk.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 100%;
 }
 .categories .categories-content .block .title {
   text-align: center;
