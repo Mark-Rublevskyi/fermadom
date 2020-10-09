@@ -29,6 +29,7 @@ a {
   border-bottom: 1px #E0E0E0 solid;
   padding-bottom: 20px;
   text-align: center;
+  overflow: auto;
 }
 .top-bar h2 {
   font-weight: 800;
@@ -303,7 +304,7 @@ header .down-header .header-content .header-block .header-text p {
   height: 200px;
 }
 .products .new-content .down-bar .block .title {
-  padding: 10px 10px;
+  padding: 15px 10px;
 }
 .products .new-content .down-bar .block .title h2 {
   font-weight: bold;
@@ -475,6 +476,7 @@ header .down-header .header-content .header-block .header-text p {
 .footer {
   background-image: url(../img/vegetable-bg.svg);
   padding: 100px 0;
+  overflow: auto;
 }
 .footer .footer-content .top-footer .left-bar {
   display: inline-block;

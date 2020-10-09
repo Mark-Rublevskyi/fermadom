@@ -49,9 +49,6 @@
   .products .new-content .down-bar .block .image img {
     width: 100%;
   }
-  .products .new-content .down-bar .block .title {
-    padding: 170px 10px 0 10px;
-  }
   .products .new-content .down-bar .block:nth-child(3) {
     margin-left: 0;
   }
@@ -131,6 +128,18 @@
     margin-left: 37%;
   }
 }
+@media (max-width: 750px) {
+  .top-bar h2 {
+    font-size: 25px;
+    padding-left: 0;
+    text-align: start;
+    width: 55%;
+    margin-top: 0;
+  }
+  .top-bar button {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 700px) {
   .about-us .about-us-content .right-bar .slider .slide .text {
     padding: 5px !important;
@@ -138,6 +147,16 @@
   }
   .about-us .about-us-content .right-bar .slider .slide .text p {
     font-size: 20px !important;
+  }
+  .products .new-content .down-bar .block {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  .products .new-content .down-bar .block .image img {
+    width: 100%;
+  }
+  .products .new-content .down-bar .block .title {
+    padding: 0 10px 0 10px;
   }
 }
 @media (max-width: 600px) {
@@ -149,8 +168,9 @@
     margin-left: 0;
     display: block;
   }
-  .products .new-content .down-bar .block .title {
-    padding: 230px 10px 0 10px;
+  .products .new-content .down-bar .block .image img {
+    height: 200px;
+    width: 100%;
   }
   .how-we-work .how-content .blocks .block {
     width: 90%;
@@ -169,6 +189,21 @@
   }
 }
 @media (max-width: 400px) {
+  .top-bar {
+    padding: 0 30px 120px 30px;
+  }
+  .top-bar h2 {
+    display: block;
+    margin-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .top-bar button {
+    margin-right: 5%;
+    display: block;
+    padding: 10px 0;
+    width: 90%;
+  }
   .about-us .about-us-content .left-bar .about-us-heading h2 {
     font-size: 30px !important;
   }
@@ -191,6 +226,23 @@
   .about-us .about-us-content .left-bar .about-us-text p {
     font-size: 16px !important;
     line-height: 35px !important;
+  }
+  .how-we-work .how-content .blocks .block .icon {
+    margin-left: 34%;
+  }
+}
+@media (max-width: 250px) {
+  .top-bar button {
+    margin-right: 0;
+    margin-left: 40%;
+  }
+  .how-we-work .how-content .blocks .block .icon {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 250px) {
+  .how-we-work .how-content .blocks .block .icon {
+    margin-left: 25%;
   }
 }
 @media (max-width: 1200px) {
