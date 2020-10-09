@@ -138,16 +138,16 @@ header .top-header .header-content .right-bar .down-bar .search {
 }
 header .top-header .header-content .right-bar .down-bar .search input:first-child {
   padding: 10px 0;
-  width: 90%;
+  width: 80%;
   border: 2px solid #6FCF97;
   outline: none;
 }
 header .top-header .header-content .right-bar .down-bar .search input:nth-child(2) {
   padding: 10px 20px;
-  margin-left: -84px;
+  margin-left: -4px;
   cursor: pointer;
   background-color: #F2C94C;
-  border: none;
+  border: 2px solid #6FCF97;
   outline: none;
   transition: 0.3s all ease;
 }
@@ -173,7 +173,7 @@ header .top-header .header-content .right-bar .down-bar .rug span {
   cursor: pointer;
 }
 header .down-header {
-  background-image: url(../img/header-image.svg);
+  background-image: url(../img/bg.svg);
   padding: 20px 0;
 }
 header .down-header .header-content {
@@ -286,10 +286,12 @@ header .down-header .header-content .header-block .header-text p {
 }
 .products .new-content .down-bar {
   padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .products .new-content .down-bar .block {
   width: 23%;
-  display: inline-block;
   margin-left: 28px;
   background-color: #fff;
   padding-bottom: 20px;
@@ -298,9 +300,6 @@ header .down-header .header-content .header-block .header-text p {
   margin-left: 0;
 }
 .products .new-content .down-bar .block .image {
-  background-image: url(../img/makarons.svg);
-  background-repeat: no-repeat;
-  background-image: cover;
   height: 200px;
 }
 .products .new-content .down-bar .block .title {
@@ -364,10 +363,12 @@ header .down-header .header-content .header-block .header-text p {
 }
 .subscribe {
   padding: 50px 0;
+  overflow: auto;
 }
 .subscribe .wrapper .subscribe-content {
   padding: 50px 100px;
   background-image: url(../img/bg.svg);
+  overflow: auto;
 }
 .subscribe .wrapper .subscribe-content .left-bar {
   display: inline-block;
@@ -402,12 +403,13 @@ header .down-header .header-content .header-block .header-text p {
   padding: 7px;
 }
 .subscribe .wrapper .subscribe-content .right-bar .email input {
-  padding: 6px 0;
+  padding: 8px 0;
   width: 60%;
   outline: none;
   position: relative;
   padding-left: 30px;
   margin-bottom: 15px;
+  border: 2px #828282 solid;
 }
 .subscribe .wrapper .subscribe-content .right-bar .email input::placeholder {
   font-weight: 500;
@@ -419,12 +421,13 @@ header .down-header .header-content .header-block .header-text p {
   padding: 8px 20px;
   background: #F2C94C;
   border-radius: 2px;
+  margin-left: -5px;
   border: none;
   outline: none;
   cursor: pointer;
-  margin-left: -100px;
   z-index: 200;
   position: relative;
+  border: 2px #828282 solid;
 }
 .subscribe .wrapper .subscribe-content .right-bar .email button:hover {
   background-color: #27AE60;
@@ -437,6 +440,7 @@ header .down-header .header-content .header-block .header-text p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding-top: 40px;
 }
 .how-we-work .how-content .blocks .block {
@@ -448,7 +452,7 @@ header .down-header .header-content .header-block .header-text p {
   width: 80px;
   height: 80px;
   border-radius: 100%;
-  margin-left: 38%;
+  margin-left: 35%;
 }
 .how-we-work .how-content .blocks .block .icon img {
   padding: 13px 15px;
@@ -488,17 +492,19 @@ header .down-header .header-content .header-block .header-text p {
   display: inline-block;
   float: right;
 }
-.footer .footer-content .top-footer .right-bar li {
-  display: inline-block;
-  padding-left: 100px;
+.footer .footer-content .top-footer .right-bar ul {
+  display: flex;
 }
-.footer .footer-content .top-footer .right-bar li a {
+.footer .footer-content .top-footer .right-bar ul li {
+  padding-left: 40px;
+}
+.footer .footer-content .top-footer .right-bar ul li a {
   color: #fff;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
 }
-.footer .footer-content .top-footer .right-bar li a:hover {
+.footer .footer-content .top-footer .right-bar ul li a:hover {
   color: #27AE60;
 }
 .footer .footer-content .down-footer {

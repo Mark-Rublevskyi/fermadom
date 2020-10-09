@@ -15,6 +15,7 @@
   }
   .about-us .wrapper .about-us-content .left-bar .about-us-heading h2 {
     font-size: 45px;
+    line-height: 50px;
   }
   .about-us .wrapper .about-us-content .left-bar .about-us-text p {
     font-size: 30px;
@@ -40,6 +41,19 @@
   }
   .categories .categories-content .block .title h2 {
     font-size: 35px;
+  }
+  .products .new-content .down-bar .block {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  .products .new-content .down-bar .block .image img {
+    width: 100%;
+  }
+  .products .new-content .down-bar .block .title {
+    padding: 170px 10px 0 10px;
+  }
+  .products .new-content .down-bar .block:nth-child(3) {
+    margin-left: 0;
   }
 }
 @media (max-width: 1100px) {
@@ -94,11 +108,27 @@
     font-size: 30px;
     width: 100%;
   }
-  .categories .wrapper {
-    padding: 0;
+  .categories .categories-content {
+    justify-content: center;
   }
   .categories .categories-content .block {
-    width: 95%;
+    width: 100%;
+    padding-left: 0;
+  }
+  .categories .categories-content .block .image {
+    height: 150px;
+  }
+  .how-we-work .how-content .blocks {
+    justify-content: center;
+  }
+  .how-we-work .how-content .blocks .block {
+    width: 40%;
+  }
+  .how-we-work .how-content .blocks .block:nth-child(2) {
+    margin-left: 40px;
+  }
+  .how-we-work .how-content .blocks .block .icon {
+    margin-left: 37%;
   }
 }
 @media (max-width: 700px) {
@@ -108,5 +138,92 @@
   }
   .about-us .about-us-content .right-bar .slider .slide .text p {
     font-size: 20px !important;
+  }
+}
+@media (max-width: 600px) {
+  header .top-header .header-content .right-bar .icons .icon {
+    display: none;
+  }
+  .products .new-content .down-bar .block {
+    width: 100%;
+    margin-left: 0;
+    display: block;
+  }
+  .products .new-content .down-bar .block .title {
+    padding: 230px 10px 0 10px;
+  }
+  .how-we-work .how-content .blocks .block {
+    width: 90%;
+    padding-bottom: 30px;
+  }
+  .how-we-work .how-content .blocks .block:nth-child(2) {
+    margin-left: 0;
+  }
+  .how-we-work .how-content .blocks .block .icon {
+    margin-left: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .about-us .about-us-content .right-bar .slider {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .about-us .about-us-content .left-bar .about-us-heading h2 {
+    font-size: 30px !important;
+  }
+  .about-us .about-us-content .left-bar .about-us-text p {
+    font-size: 18px !important;
+    line-height: 35px !important;
+  }
+}
+@media (max-width: 300px) {
+  header .top-header .header-content .left-bar .logo img {
+    width: 120px;
+  }
+  header .top-header .header-content .right-bar .top-bar-header .icons span {
+    font-size: 25px;
+  }
+  .about-us .about-us-content .left-bar .about-us-heading h2 {
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+  .about-us .about-us-content .left-bar .about-us-text p {
+    font-size: 16px !important;
+    line-height: 35px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .slick-arrow {
+    padding: 50px 15px;
+  }
+  .slick-dots {
+    left: 35%;
+  }
+  .slick-dots li button {
+    padding: 10% 15%;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 900px) {
+  .slick-dots {
+    left: 28%;
+  }
+}
+@media (max-width: 800px) {
+  .slick-dots li {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .slick-arrow {
+    padding: 10px 15px;
+    top: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .slick-arrow {
+    padding: 5px 10px;
+    font-size: 20px;
   }
 }
