@@ -29,7 +29,6 @@ a {
   border-bottom: 1px #E0E0E0 solid;
   padding-bottom: 20px;
   text-align: center;
-  overflow: auto;
 }
 .top-bar h2 {
   font-weight: 800;
@@ -369,11 +368,9 @@ header .down-header .header-content .header-block .header-text p {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0;
-  overflow: auto;
 }
 .subscribe .subscribe-content {
   padding: 50px 100px;
-  overflow: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
